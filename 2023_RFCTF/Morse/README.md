@@ -28,7 +28,7 @@ To manually decode, I find Audacity to work well. That - along with concentratio
 
 Fldigi was very usefull for many of the challenges. It takes some tuning to get right, but worked well.  For these challenges, you need to set the words per minute (WPM).
 
-Start by opening the capture for playback. I used both Gqrx and Audacity with success. But for this write up - let go with Audacity.
+Start by opening the capture for playback. I used both Gqrx and Audacity with success. For this write up I use Audacity.
 
 Notice in the picture above that one word takes about 10 seconds to transmit. That means you'll have somewhere between 4 to 6 WPM.
 
@@ -50,9 +50,10 @@ And profit??
 
 ```bash
 MORSE 3: BSIDESLV POOL PARTY IS LIT 
+MORSE 4: PROTON BEAMS CREATE A DAZZLING LIGHT SHOW. 
 ```
 
-## References:
+## References
 
 - [https://gnuradio.org/](https://gnuradio.org/)
 - [https://www.audacityteam.org/](https://www.audacityteam.org/)
