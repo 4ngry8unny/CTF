@@ -4,15 +4,23 @@ There was a set of five morse code challenges. Four were available online, and o
 
 ## Aquire
 
-The kind folks of RFHS provide a few gnuradio templates to get participants started. As is, the gr template will use zqm to connect to a server:port combo and show and play the signal. I added a file sink for IQ and WAV file creation.
+The kind folks of RFHS provide a few gnuradio templates to get participants started. As is, the gr template will use zqm to connect to a server:port combo and show and play the signal. I added a file sink for IQ file creation and removed the filters and audio sink. Audio was not great during live capture due to latency.
 
-![gnuradio morse](gnuradio_morse.png)
+You'll want to change the port and filename variables.
+
+![gnuradio morse](gnuradio_capture.png)
+
+## Playback
+
+You will want something to play back the capture. Of corse there is gnuradio. I had trouble getting good audio signal from gnuradio. Probably because I don't know what I'm doing yet.
+
+Gqrx works well with the IQ files produced by gnuradio. Audacity can handle the IQ files, just have to import them as raw data (File -> Import -> Raw Data). MAke sure to set the sample rate to 96000. Also, since this is complex32 data samples, set the sample type to float32, and select 2 channels for input.
+
+![Audacity setup](audacity_import.png)
+
+The nice thing about  using audacity is you can trim the collection to just the signal - leave a couple seconds on either end. You can also scrub forward and backward through the signal. I also mixed the two channel stereo down to mono and exported thje result to a wav file.
 
 ## Decode
-
-You will want something to play back the capture. Gqrx works well with the IQ files produced by gnuradio. Most any SDR software should be ok with the WAV files. The IQ files will contain the data at the original captured sample rate of 96 kHz, where as the WAV file will be at 48 kHz. The lower sample rate WAVs will not be an issue here.
-
-Other than Gqrx for the IQ files, Audacity can handle the IQ files, just have to import them as raw data (File -> Import -> Raw Data) with 2 channels.
 
 If you know morse code, excellent!
 
@@ -45,6 +53,8 @@ Move the target box to contain the CW signal.
 ![fldigi signal](fldigi_signal.png)
 
 And profit??
+
+![Showing workflow for decode](toolchain.png)
 
 ## Flags
 
