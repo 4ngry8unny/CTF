@@ -8,7 +8,10 @@ The kind folks of RFHS provide a few gnuradio templates to get participants star
 
 You'll want to change the port and filename variables.
 
+[../zmq_to_file.grc](../zmq_to_file.grc)
+
 ![gnuradio morse](gnuradio_capture.png)
+
 
 ## Playback
 
