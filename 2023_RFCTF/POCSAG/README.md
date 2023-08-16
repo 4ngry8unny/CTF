@@ -39,11 +39,11 @@ dd if=pocsag_msg.bin of=pocsag_msg_trim.bin bs=$block_size skip=$ddskip count=$d
 The calculations for skip and count are based on the sample rate, number of channels, size of datapoint and number of seconds. The number of channels is considered 2 because IQ files interleve I and Q samples.
 
 ```bash
-ddskip = sample_rate * num_channels * size_t * seconds) / block_size
-       = (   96000   *      2       *  4      * 24    ) / 512
+ddskip = samp_rate * num_channels * size * skip) / block_size
+       = ( 96000   *      2       *  4   * 24  ) / 512
 ```
 
-Similiar calculation for count. In this case, I am skipping 24 seconds into the collection and then coping the next 5 seconds of data.
+Similiar calculation for count. In this case, I am skipping 20 seconds into the collection and then coping the next 5 seconds of data.
 
 Once you have the file the way you want, stream the data to UDP port 7355.
 
