@@ -66,7 +66,9 @@ Multimon-NG was used to decode. It has many decoders, including POCSAG512 POCSAG
 In a terminal, run:
 
 ```bash
-nc -l -u -p 7355 | sox -t raw -esigned-integer -b 16 -r 48000 - -esigned-integer -b 16 -r 22050 -t raw - | multimon-ng -t raw -a POCSAG512 -f alpha -
+nc -l -u -p 7355 |\
+sox -t raw -esigned-integer -b 16 -r 48000 - -esigned-integer -b 16 -r 22050 -t raw - |\
+multimon-ng -t raw -a POCSAG512 -f alpha -
 ```
 
 ![toolchain](pocsag_msg_toolchain.png)
