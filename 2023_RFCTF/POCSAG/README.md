@@ -6,13 +6,18 @@
 
 This writeup contains the methods used for the virtual POCSAG challenges.
 
-## Aquire
+- [ASK Challenges[README](#POCSAG-challenges)](#POCSAG-challenges)
+  - [Acquire](#acquire)
+  - [Playback](#playback)
+  - [Decode](#decode)
+  - [Flags](#flags)
+  - [References](#references)
 
-Aquire the signal using the gnuradio template provided.
-
-[../zmq_to_file.grc](../zmq_to_file.grc)
+## Acquire
+See [Acquiring the signal](../Acquisition/README.md#Acquisition)
 
 ## Playback
+See [Playback of signal](../Acquisition/README.md#Playback)
 
 I'm sure there is a way to use gnuradio or audacity for this, but I found that the easiest (i.e. most repeatable and less finiky) way to do this was with Gqrx with output going to UDP.
 
