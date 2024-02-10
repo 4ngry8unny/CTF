@@ -23,7 +23,7 @@ Once QSSTV is reading the signal, it's just a matter of waiting.
 
 ### SSTV 1
 
-![[2023_RFCTF/SSTV/sstv1-flag.png]]
+![sstv1-flag.png](sstv1-flag.png)
 
 ## References
 https://ourcodeworld.com/articles/read/956/how-to-convert-decode-a-slow-scan-television-transmissions-sstv-audio-file-to-images-using-qsstv-in-ubuntu-18-04
