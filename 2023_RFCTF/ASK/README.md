@@ -1,14 +1,17 @@
 # ASK Challenges
 
+- [ASK Challenges](#ASK-challenges)
+  - [Acquire](#acquire)
+  - [Playback](#playback)
+  - [Decode](#decode)
+  - [Flags](#flags)
+  - [References](#references)
 
-
-## Aquire
-
-Aquire the signal using the gnuradio template provided.
-
-[../zmq_to_file.grc](../zmq_to_file.grc)
+## Acquire
+See [Acquiring the signal](../Acquisition/README.md#Acquisition)
 
 ## Playback
+See [Playback of signal](../Acquisition/README.md#Playback)
 
 Used Gqrx at first to get a better feel for the signal.
 

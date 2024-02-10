@@ -3,7 +3,7 @@
 There was a set of five morse code challenges. Four were available online, and one was on site only. Challenges use basically the same set techniques to solve.
 
 - [Morse Code Challenges](#morse-code-challenges)
-  - [Aquire](#aquire)
+  - [Acquire](#acquire)
   - [Playback](#playback)
   - [Decode](#decode)
     - [Manual Decode](#manual-decode)
@@ -12,18 +12,12 @@ There was a set of five morse code challenges. Four were available online, and o
   - [References](#references)
 
 
-## Aquire
-
-The kind folks of RFHS provide a few gnuradio templates to get participants started. As is, the gr template will use zqm to connect to a server:port combo and show and play the signal. I added a file sink for IQ file creation and removed the filters and audio sink. Audio was not great during live capture due to latency.
-
-You'll want to change the port and filename variables.
-
-[../zmq_to_file.grc](../zmq_to_file.grc)
-
-![gnuradio morse](gnuradio_capture.png)
-
+## Acquire
+See [Acquiring the signal](../Acquisition/README.md#Acquisition)
 
 ## Playback
+
+See [Playback of signal](../Acquisition/README.md#Playback)
 
 You will want something to play back the capture. Of course there is gnuradio. I had trouble getting good audio signal from gnuradio. Probably because I don't know what I'm doing yet.
 
@@ -44,6 +38,15 @@ Otherwise, you can manually decode the dits and dahs by inspection, or use somet
 To manually decode, I find Audacity to work well. That - along with concentration and an online decoder tool.
 
 ![morse decode example](morse_decode_example.png)
+
+
+1. Delete channel marker part so that 0:00 is start of morse signal
+2. Zoom in to scale of 1/10th of a second
+3. Read . (dit) and - (dah)
+4. Convert to uppercase ascii, then drop the challenge ID
+
+For example, Morse 4 would look like this:
+![](2023_RFCTF/Morse/morse4-audacity.png)
 
 ### Fldigi
 
