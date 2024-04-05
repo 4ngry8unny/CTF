@@ -75,8 +75,19 @@ And profit??
 ## Flags
 
 ```bash
-MORSE 3: BSIDESLV POOL PARTY IS LIT 
-MORSE 4: PROTON BEAMS CREATE A DAZZLING LIGHT SHOW. 
+MORSE 3: BSIDESLV POOL PARTY IS LIT  
+```
+```bash
+00:00  -- --- .-. ... . ....- ---...
+02.60  .--. .-. --- - --- -.
+04.70 -... . .- -- ...
+06.05  -.-. .-. . .- - .
+07.50 .-
+07.80 -.. .- --.. --.. .-.. .. -. --.
+10.45   .-.. .. --. .... -
+11.90  ... .... --- .-- .-.-.-
+
+MORSE 4: PROTON BEAMS CREATE A DAZZLING LIGHT SHOW.
 ```
 
 ## References
